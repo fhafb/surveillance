@@ -1,0 +1,58 @@
+\documentclass[tikz,10pt]{standalone}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usetikzlibrary{positioning}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes.symbols}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{decorations.markings}
+
+\definecolor{afbgreen}{HTML}{9FC418}
+\definecolor{afbdarkgreen}{RGB}{161,197,27}
+\definecolor{afblightgreen}{HTML}{E9F1DA}
+\definecolor{afbdarkblue}{HTML}{08508A}
+\definecolor{afblightblue}{HTML}{199FD9}
+\colorlet{paletteb}{afbdarkblue}
+\colorlet{palettec}{gray}
+\colorlet{structure}{afbgreen}
+
+\setmainfont[Mapping=tex-text]{Liberation Sans}
+
+
+\begin{document}
+	\tiny
+	\begin{tikzpicture}[
+			date/.style={above left,sloped,color=paletteb},
+			datemark/.style={thick,arrows=-,color=paletteb},
+			isevent/.style={font=\bfseries,color=paletteb},
+			wevent/.style={font=\itshape,color=palettec},
+			is/.style={cloud,cloud ignores aspect,minimum width=2cm,minimum height=1cm,cloud puffs=35.6,cloud puff arc=80,fill=structure!40!white,text=paletteb,align=center}
+		]
+		\path [draw=structure,line width=3pt,>=Latex,->,postaction={decorate},decoration={markings,%
+			mark=at position 0.0667 with {\draw [datemark] (0,-0.2) -- (0,0.2);},
+			mark=at position 0.3333 with {\draw [datemark] (0,-0.2) -- (0,0.2);},
+			mark=at position 0.4333 with {\draw [datemark] (0,-0.2) -- (0,0.2);},
+			mark=at position 0.5333 with {\draw [datemark] (0,-0.2) -- (0,0.2);},
+			mark=at position 0.6667 with {\draw [datemark] (0,-0.2) -- (0,0.2);},
+			mark=at position 0.9 with {\draw [datemark] (0,-0.2) -- (0,0.2);}}] %
+		  (0,0) .. controls (4,0.5) and (8,3.5) .. (10,5.5)%
+			node [pos=0.0667,date] {1992}%
+			node [pos=0.0667,below right,isevent] {Protocole RNDE}%
+			node [pos=0.0667,below right=2ex and 0,wevent] {2\textsuperscript{e} loi sur l'eau}%
+			node [pos=0.15,above=0.5cm,is,text width=2cm,font=\bfseries\footnotesize] {RNDE}
+			node [pos=0.3333,date] {2000}%
+			node [pos=0.3233,below right,wevent] {Directive cadre sur l'eau}%
+			node [pos=0.4333,date] {2003}%
+			node [pos=0.4033,below right,isevent] {Protocole du SIE}%
+			node [pos=0.5333,above left=0.2cm and 0.1cm,is,text width=2.5cm,font=\bfseries\small] {SIE}
+			node [pos=0.5333,date] {2006}%
+			node [pos=0.5033,below right,wevent] {3\textsuperscript{e} loi sur l'eau}%
+			node [pos=0.6667,date] {2010}%
+			node [pos=0.6333,below,right,isevent] {SNDE}%
+			node [pos=0.9,date] {2017}%
+			node [pos=0.9,left=2em,wevent] {Loi biodiversité}%
+			node [pos=0.9,above left=5ex and 2em,isevent] {SNDE}
+			node (wpds) [pos=0.9,left=3cm,is,text width=2cm,minimum height=2cm,font=\bfseries\small] {Syst. des données publiques de l'eau};
+		\node at (wpds.south) [above=0.1cm,text=paletteb,font=\bfseries\small,dashed,draw=paletteb,rectangle,rounded corners] {SIE};
+	\end{tikzpicture}
+\end{document}

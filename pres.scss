@@ -1,0 +1,307 @@
+@import "/home/francois/Modèles/afb/pres/colors";
+
+#pie_rcs {
+	circle {
+		fill: rgba(0,0,0,0);
+		stroke-width: 150;
+		stroke-dasharray: 0,0,0,471.23;
+		animation: rcs_pie1 6s 1 ease both;
+	}
+
+	.pie1 {
+		stroke: $palettea;
+	}
+
+	.pie2 {
+		stroke: $paletteb;
+		animation-name: rcs_pie2;
+	}
+
+	.pie3 {
+		stroke: $palettec;
+		animation-name: rcs_pie3;
+	}
+
+	.pie4 {
+		stroke: $paletted;
+		animation-name: rcs_pie4;
+	}
+
+	& > g > g {
+		animation: rcs_appear 1s ease-in 6s 1 both;
+	}
+
+	@keyframes rcs_appear {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
+
+	@keyframes rcs_pie1 {
+		100% {stroke-dasharray: 385.9,85.34,0,0;}
+	}
+
+	@keyframes rcs_pie2 {
+		100% {stroke-dasharray: 0,385.9,25.14,60.2;}
+	}
+
+	@keyframes rcs_pie3 {
+		100% {stroke-dasharray: 0,411.04,14.3,45.9;}
+	}
+
+	@keyframes rcs_pie4 {
+		100% {stroke-dasharray: 0,425.34,45.9,0;}
+	}
+}
+
+#pie_rco {
+	circle {
+		fill: rgba(0,0,0,0);
+		stroke-width: 150;
+		stroke-dasharray: 0,0,0,471.23;
+		animation: rco_pie1 6s 1 ease both;
+	}
+
+	.pie1 {
+		stroke: $palettea;
+	}
+
+	.pie2 {
+		stroke: $paletteb;
+		animation-name: rco_pie2;
+	}
+
+	.pie3 {
+		stroke: $palettec;
+		animation-name: rco_pie3;
+	}
+
+	.pie4 {
+		stroke: $paletted;
+		animation-name: rco_pie4;
+	}
+
+	& > g > g {
+		animation: rco_appear 1s ease-in 6s 1 both;
+	}
+
+	@keyframes rco_appear {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
+
+	@keyframes rco_pie1 {
+		100% {stroke-dasharray: 435.2,36,0,0;}
+	}
+
+	@keyframes rco_pie2 {
+		100% {stroke-dasharray: 0,435.2,6.6,29.4;}
+	}
+
+	@keyframes rco_pie3 {
+		100% {stroke-dasharray: 0,441.8,7.2,22.2;}
+	}
+
+	@keyframes rco_pie4 {
+		100% {stroke-dasharray: 0,449,22.2,0;}
+	}
+}
+
+#pie_params_eso {
+	circle {
+		fill: rgba(0,0,0,0);
+		stroke-width: 200;
+		stroke-dasharray: 0,0,0,628.32;
+		animation: eso_pie1 6s 1 ease both;
+	}
+
+	.pie1 {
+		stroke: $palettea;
+	}
+
+	.pie2 {
+		stroke: $paletteb;
+		animation-name: eso_pie2;
+	}
+
+	.pie3 {
+		stroke: $palettec;
+		animation-name: eso_pie3;
+	}
+
+	.pie4 {
+		stroke: $paletted;
+		animation-name: eso_pie4;
+	}
+
+	.pie5 {
+		stroke: $palettee;
+		animation-name: eso_pie5;
+	}
+
+	.pie6 {
+		stroke: $palettef;
+		animation-name: eso_pie6;
+	}
+
+	& > g > g {
+		animation: eso_appear 1s ease-in 6s 1 both;
+	}
+
+	@keyframes eso_appear {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
+
+	@keyframes eso_pie1 {
+		100% {stroke-dasharray: 249,380,0,0;}
+	}
+
+	@keyframes eso_pie2 {
+		100% {stroke-dasharray: 0,249,45,334;}
+	}
+
+	@keyframes eso_pie3 {
+		100% {stroke-dasharray: 0,294,33,301;}
+	}
+
+	@keyframes eso_pie4 {
+		100% {stroke-dasharray: 0,327,22,279;}
+	}
+
+	@keyframes eso_pie5 {
+		100% {stroke-dasharray: 0,349,265,14;}
+	}
+
+	@keyframes eso_pie6 {
+		100% {stroke-dasharray: 0,614,14,0;}
+	}
+}
+
+#pie_cout_total {
+	circle {
+		fill: rgba(0,0,0,0);
+		stroke-width: 150;
+		stroke-dasharray: 0,0,0,471.23;
+		animation: couttot_pie1 6s 1 ease both;
+	}
+
+	.pie1 {
+		stroke: $palettea;
+	}
+
+	.pie2 {
+		stroke: $paletteb;
+		animation-name: couttot_pie2;
+	}
+
+	.pie3 {
+		stroke: $palettec;
+		animation-name: couttot_pie3;
+	}
+
+	.pie4 {
+		stroke: $paletted;
+		animation-name: couttot_pie4;
+	}
+
+	.pie5 {
+		stroke: $palettee;
+		animation-name: couttot_pie5;
+	}
+
+	& > g > g {
+		animation: couttot_appear 1s ease-in 6s 1 both;
+	}
+
+	@keyframes couttot_appear {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
+
+	@keyframes couttot_pie1 {
+		100% {stroke-dasharray: 281,190,0,0;}
+	}
+
+	@keyframes couttot_pie2 {
+		100% {stroke-dasharray: 0,281,105,85;}
+	}
+
+	@keyframes couttot_pie3 {
+		100% {stroke-dasharray: 0,386,17,68;}
+	}
+
+	@keyframes couttot_pie4 {
+		100% {stroke-dasharray: 0,403,41,27;}
+	}
+
+	@keyframes couttot_pie5 {
+		100% {stroke-dasharray: 0,444,27,0;}
+	}
+}
+
+#pie_cout_me {
+	circle {
+		fill: rgba(0,0,0,0);
+		stroke-width: 150;
+		stroke-dasharray: 0,0,0,471.23;
+		animation: cout_me_pie1 6s 1 ease both;
+	}
+
+	.pie1 {
+		stroke: $palettea;
+	}
+
+	.pie2 {
+		stroke: $paletteb;
+		animation-name: cout_me_pie2;
+	}
+
+	.pie3 {
+		stroke: $palettec;
+		animation-name: cout_me_pie3;
+	}
+
+	.pie4 {
+		stroke: $paletted;
+		animation-name: cout_me_pie4;
+	}
+
+	.pie5 {
+		stroke: $palettee;
+		animation-name: cout_me_pie5;
+	}
+
+	& > g > g {
+		animation: cout_me_appear 1s ease-in 6s 1 both;
+	}
+
+	@keyframes cout_me_appear {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
+
+	@keyframes cout_me_pie1 {
+		100% {stroke-dasharray: 18,453,0,0;}
+	}
+
+	@keyframes cout_me_pie2 {
+		100% {stroke-dasharray: 0,18,123,331;}
+	}
+
+	@keyframes cout_me_pie3 {
+		100% {stroke-dasharray: 0,141,120,211;}
+	}
+
+	@keyframes cout_me_pie4 {
+		100% {stroke-dasharray: 0,260,170,41;}
+	}
+
+	@keyframes cout_me_pie5 {
+		100% {stroke-dasharray: 0,430,41,0;}
+	}
+}
+
+@keyframes bargraph_anim {
+	from { transform: scaleY(0); }
+	to { transform: scaleY(1); }
+}

@@ -1,0 +1,74 @@
+<svg viewbox="0 0 800 400" preserveAspectRatio="xMidYMid meet" baseprofile="full" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<style>
+		.year {
+			font: 0.6em sans-serif;
+			fill: #08508a;
+			text-anchor: middle;
+		}
+
+		.text {
+			font: bold 0.7em sans-serif;
+			fill: #08508a;
+		}
+
+		.law {
+			font: italic 0.7em sans-serif;
+			fill: #666666;
+		}
+
+		.is {
+			font: bold 1.2em sans-serif;
+			fill: #08508a;
+			dominant-baseline: middle;
+			text-anchor: middle;
+		}
+
+		.isbox {
+			rx: 10;
+			ry: 10;
+			stroke: #9fc418;
+			fill: #e9f1da;
+			filter: url(#shadow);
+		}
+	</style>
+	<defs>
+		<marker id="arrow" markerWidth="5" markerHeight="5" refX="2" refY="1.5" orient="auto" markerUnits="strokeWidth">
+			<path d="M0,0 L0,3 L4.5,1.5 z" fill="#9fc418" />
+		</marker>
+		<filter id="shadow" x="0" y="0" width="200%" height="200%">
+			<feOffset result="off" in="SourceGraphic" dx="10" dy="10" />
+			<feGaussianBlur result="blur" in="off" stdDeviation="10" />
+			<feBlend in="SourceGraphic" in2="blur" mode="normal" />
+		</filter>
+	</defs>
+	<path d="M 50 350 c 300 0, 600 -200, 700 -300" stroke="#9fc418" stroke-width="5" fill="none" marker-end="url(#arrow)" />
+	<path d="M 95.3 353.5 L 94.7 343.5" stroke="#08508a" stroke-width="2" fill="none" />
+	<text x="94.3" y="338.6" class="year" transform="rotate(-3.7 94.3,338.6)">1992</text>
+	<text x="95.6" y="368.5" class="text">Protocole national des données sur l'eau</text>
+	<text x="95.6" y="378.5" class="law">2e loi sur l'eau</text>
+	<rect x="100" y="200" width="180" height="60" class="isbox" />
+	<text x="190" y="230" class="is">RNDE</text>
+	<path data-fragment="{'0':['invisible']}" d="M 307.6 311.6 L 304.6 302.1" stroke="#08508a" stroke-width="2" fill="none" />
+	<text data-fragment="{'0':['invisible']}" x="303.1" y="297.3" class="year" transform="rotate(-17.8 303.1,297.3)">2000</text>
+	<text data-fragment="{'0':['invisible']}" x="309.2" y="326.4" class="law">DCE</text>
+	<path data-fragment="{'0-1':['invisible']}" d="M 382.9 284.5 L 379.2 275.2" stroke="#08508a" stroke-width="2" fill="none" />
+	<text data-fragment="{'0-1':['invisible']}" x="377.3" y="270.5" class="year" transform="rotate(-21.8 377.3,270.5)">2003</text>
+	<text data-fragment="{'0-1':['invisible']}" x="384.7" y="299.1" class="text">Protocole du SIE</text>
+	<rect data-fragment="{'0-1':['invisible']}" x="360" y="130" width="130" height="50" class="isbox" />
+	<text data-fragment="{'0-1':['invisible']}" x="425" y="155" class="is">SIE</text>
+	<path data-fragment="{'0-2':['invisible']}" d="M 454.4 253.1 L 450.1 244.1" stroke="#08508a" stroke-width="2" fill="none" />
+	<text data-fragment="{'0-2':['invisible']}" x="447.9" y="239.6" class="year" transform="rotate(-25.4 447.9,239.6)">2006</text>
+	<text data-fragment="{'0-2':['invisible']}" x="456.5" y="267.6" class="law">3e loi sur l'eau</text>
+	<path data-fragment="{'0-3':['invisible']}" d="M 542.4 207.1 L 537.4 198.4" stroke="#08508a" stroke-width="2" fill="none" />
+	<text data-fragment="{'0-3':['invisible']}" x="535.0" y="194.1" class="year" transform="rotate(-29.7 535.0,194.1)">2010</text>
+	<text data-fragment="{'0-4':['invisible']}" x="544.9" y="221.4" class="text">SNDE 2010</text>
+	<path data-fragment="{'0-4':['invisible']}" d="M 670.6 123.6 L 664.6 115.6" stroke="#08508a" stroke-width="2" fill="none" />
+	<text data-fragment="{'0-4':['invisible']}" x="661.6" y="111.6" class="year" transform="rotate(-36.7 661.6,111.6)">2017</text>
+	<text data-fragment="{'0-4':['invisible']}" x="673.6" y="137.6" class="text">SNDE 2018</text>
+	<rect data-fragment="{'0-4':['invisible']}" x="450" y="10" width="200" height="100" class="isbox" />
+	<text data-fragment="{'0-4':['invisible']}" x="550" y="30" class="is">Système des</text>
+	<text data-fragment="{'0-4':['invisible']}" x="550" y="50" class="is">données publiques</text>
+	<text data-fragment="{'0-4':['invisible']}" x="550" y="70" class="is">de l'eau</text>
+	<rect data-fragment="{'0-4':['invisible']}" x="520" y="80" width="60" height="24" rx="10" ry="10" stroke="#9fc418" stroke-dasharray="4" fill="#e9f1da" />
+	<text data-fragment="{'0-4':['invisible']}" x="550" y="92" class="is">SIE</text>
+</svg>

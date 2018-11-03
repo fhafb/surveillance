@@ -1,0 +1,110 @@
+<svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet" baseprofile="full" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<style>
+		.planninggroup {
+			fill: #87c5f8;
+			rx: 10;
+			ry: 10;
+		}
+		.wisgroup {
+			fill: #ccea62;
+			rx: 10;
+			ry: 10;
+		}
+		.centeredtext {
+			text-anchor: middle;
+			dominant-baseline: middle;
+		}
+		.members {
+			fill: black;
+			font-size: 0.8em;
+		}
+		.ggname {
+			fill: black;
+			font-size: 1em;
+			font-weight: bold;
+		}
+		.gname {
+			fill: black;
+			font-size: 0.8em;
+		}
+		.gtitle {
+			fill: black;
+			font-size: 0.8em;
+			font-weight: bold;
+		}
+		.planningarrow {
+			stroke: #87c5f8;
+			stroke-width: 3;
+			marker-end: url(#arrow1);
+		}
+		.wisarrow {
+			stroke: #ccea62;
+			stroke-width: 3;
+			marker-end: url(#arrow2);
+		}
+	</style>
+	<marker id="arrow1" markerWidth="5" markerHeight="5" refX="3" refY="1.5" orient="auto" markerUnits="strokeWidth">
+		<path d="M0,0 L0,3 L4.5,1.5 z" fill="#87c5f8" />
+	</marker>
+	<marker id="arrow2" markerWidth="5" markerHeight="5" refX="3" refY="1.5" orient="auto" markerUnits="strokeWidth">
+		<path d="M0,0 L0,3 L4.5,1.5 z" fill="#ccea62" />
+	</marker>
+	<text x="150" y="15" class="members">DG</text>
+	<rect x="150" y="20" width="275" height="40" class="planninggroup" />
+	<text x="275" y="40" class="ggname centeredtext">CNP</text>
+	<rect x="400" y="20" width="275" height="40" class="wisgroup" />
+	<text x="537" y="40" class="ggname centeredtext">Comité stratégique du SIE</text>
+	<text x="0" y="105" class="members">Chefs de dép.</text>
+	<rect x="0" y="110" width="275" height="40" class="planninggroup" />
+	<text x="137" y="130" class="ggname centeredtext">GT Planification</text>
+	<path d="M 137 105 L 287 70" class="planningarrow" />
+	<rect x="425" y="110" width="375" height="40" class="wisgroup" />
+	<text x="612" y="130" class="ggname centeredtext">GCIB</text>
+	<path d="M 612 105 L 537 70" class="wisarrow" />
+	<ellipse cx="350" cy="130" rx="70" ry="20" stroke="#08508A" stroke-width="2" fill="none" />
+	<text x="350" y="130" class="ggname centeredtext">Ministère - AFB</text>
+	<rect x="0" y="200" width="100" height="180" rx="10" ry="10" fill="#ffb3b3" />
+	<text x="50" y="215" class="ggname centeredtext" style="font-size: 0.6em">Groupes techniques</text>
+	<rect x="5" y="230" width="90" height="40" rx="10" ry="10" fill="#ff8080" />
+	<text x="50" y="250" class="gname centeredtext">GT Quantitatif</text>
+	<rect x="5" y="280" width="90" height="40" rx="10" ry="10" fill="#ff8080" />
+	<text x="50" y="290" class="gname centeredtext">GT Pollutions</text>
+	<text x="50" y="310" class="gname centeredtext">diffuses</text>
+	<rect x="5" y="330" width="90" height="40" rx="10" ry="10" fill="#ff8080" />
+	<text x="50" y="350" class="gname centeredtext">...</text>
+	<path d="M 50 190 L 50 160" class="planningarrow" />
+	<text x="0" y="390" class="members">Experts techniques</text>
+	<rect x="175" y="200" width="100" height="180" rx="10" ry="10" fill="#cfe8fc" />
+	<text x="225" y="215" class="ggname centeredtext" style="font-size: 0.6em">Groupes planif.</text>
+	<rect x="180" y="230" width="90" height="40" class="planninggroup" />
+	<text x="225" y="250" class="gname centeredtext">GT SDAGE</text>
+	<rect x="180" y="280" width="90" height="40" class="planninggroup" />
+	<text x="225" y="300" class="gname centeredtext">GT DCE-ESC</text>
+	<rect x="180" y="330" width="90" height="40" class="planninggroup" />
+	<text x="225" y="350" class="gname centeredtext">...</text>
+	<path d="M 225 190 L 225 160" class="planningarrow" />
+	<path d="M 165 290 L 110 290" class="planningarrow" />
+	<path d="M 285 190 L 415 160" class="wisarrow" />
+	<text x="175" y="390" class="members">Opérationnels</text>
+	<rect x="425" y="200" width="100" height="180" rx="10" ry="10" fill="#ffffbb" />
+	<text x="475" y="215" class="ggname centeredtext" style="font-size: 0.6em">COPIL projets</text>
+	<rect x="430" y="230" width="90" height="40" rx="10" ry="10" fill="#ffff66" />
+	<text x="475" y="250" class="gname centeredtext">Osmose</text>
+	<rect x="430" y="280" width="90" height="40" rx="10" ry="10" fill="#ffff66" />
+	<text x="475" y="300" class="gname centeredtext">SEEE</text>
+	<rect x="430" y="330" width="90" height="40" rx="10" ry="10" fill="#ffff66" />
+	<text x="475" y="350" class="gname centeredtext">...</text>
+	<path d="M 475 190 L 475 160" class="wisarrow" />
+	<path d="M 415 190 L 285 160" class="planningarrow" />
+	<rect x="575" y="200" width="225" height="180" rx="10" ry="10" fill="#e9f6bc" />
+	<text x="687" y="215" class="ggname centeredtext" style="font-size:0.8em">Les groupes techniques du SIE</text>
+	<rect x="580" y="230" width="105" height="60" class="wisgroup" />
+	<text x="632" y="260" class="gname centeredtext">GPAA</text>
+	<rect x="692" y="230" width="105" height="60" class="wisgroup" />
+	<text x="745" y="260" class="gname centeredtext">GPIG</text>
+	<rect x="580" y="310" width="105" height="60" class="wisgroup" />
+	<text x="632" y="340" class="gname centeredtext">GP Eaufrance</text>
+	<rect x="692" y="310" width="105" height="60" class="wisgroup" />
+	<text x="745" y="340" class="gname centeredtext">GPS</text>
+	<path d="M 687 190 L 687 160" class="wisarrow" />
+</svg>

@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="fr" data-notes="notes.html" data-synchronize="slides.php">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Présentation du système d'information sur l'eau">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Le système d'information sur l'eau</title>
+	<link rel="stylesheet" href="https://fhafb.github.io/template_pres/svgtemplate.css">
+	<link rel="stylesheet" href="https://fhafb.github.io/template_pres/template.css">
+	<link rel="stylesheet" href="pres.css">
+
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="outline" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Sommaire</h1>
+		<div class="content"></div>
+	</div>
+
+	<section id="title" data-background="https://fhafb.github.io/template_pres/img/page_garde.svg" data-animation="convex">
+		<h1>
+			Le programme de surveillance et le système d'information sur l'eau<br/><span class="subtitle">La planification dans le domaine de l'eau de l'échelle européenne à l'échelle territoriale</span>
+		</h1>
+		<div class="authordate">François Hissel<br/><time>20 novembre 2018</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-section="Le cadrage réglementaire" data-ssection="Réglementation" data-subsection="Les données de la planification" data-animation="convex"> 
+		<h1>Une prise de conscience « récente »</h1>
+		<div class="content">
+			<ul>
+				<li>L'usage premier est l'eau de consommation courante
+					<ul>
+						<li>1<sup>ère</sup> réglementation sur l'eau - 1790 : les communes ont la responsabilité de la distribution de l'eau</li>
+						<li>Loi du 15 février 1902 relative à la protection de la santé publique : limitation de la propagation des épidémies, taxe sanitaire, pénalités pour dégradation</li>
+					</ul>
+				</li>
+				<li>Vers des usages concertés et réglementés de l'eau (consommation, agriculture, industrie, environnement)
+					<ul>
+						<li>Ordonnance du 20 décembre 1958 : garantie de potabilité de l'eau</li>
+						<li>Loi sur l'eau du 16 décembre 1964 : gestion décentralisée, <strong>inventaire physique, chimique, biologique</strong> ; réglementation des activités ; police de l'eau ; agence financière de bassin</li>
+						<li>2<sup>ème</sup> loi sur l'eau du 3 janvier 1992 : SDAGE, SAGE ; <strong>normes de qualité</strong></li>
+						<li>Directive cadre sur l'eau (2000) : <strong>surveillance, évaluation, programme de mesures, objectif de bon état</strong></li>
+						<li>3<sup>ème</sup> loi sur l'eau du 30 décembre 2006 (LEMA) : DCE, Onema</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex" >
+		<h1>Les données de la planification</h1>
+		<div class="content">
+			<ul>
+				<li>La mise en œuvre de la DCE :
+					<ul>
+						<li>consomme des données</li>
+						<li>produit des données</li>
+					</ul>
+				</li>
+				<li>Obligation de consommer et de produire</li>
+				<li>La donnée est la matière du rapportage</li>
+				<li>Les données sont organisées dans des SI (SIE) — ou pas</li>
+				<li>À l'origine du SIE :
+					<ul>
+						<li>Schéma national des données sur l'eau (SNDE)</li>
+					</ul>
+				</li>
+				<li>Les données peuvent provenir d'autres SI
+					<ul>
+						<li>ex : SI sanitaire, météo, statistique publique (agricole), etc.</li>
+					</ul>
+				</li>
+				<li>Elles alimentent d'autres SI (ex : WISE à l'échelle européenne)</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex" data-subsection="Les données de la DCE">
+		<h1>Données DCE : art.3 (administratives)</h1>
+		<div class="content">
+			<table class="grid leftaligned shadowed">
+				<thead>
+					<tr>
+						<td>Données consommées</td>
+						<td>Données produites</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>Référentiel hydrographique</li>
+								<li>Limites administratives</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Délimitation des bassins DCE et des sous-unités [SIE]</li>
+								<li>Désignation et rôle des autorités compétentes [WISE]</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<ul>
+				<li><a href="http://www.ign.fr">www.ign.fr</a></li>
+				<li><a href="http://www.sandre.eaufrance.fr">www.sandre.eaufrance.fr</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Données DCE : art.5 (usages)</h1>
+		<div class="content">
+			<table class="grid leftaligned shadowed">
+				<thead>
+					<tr>
+						<td>Données consommées</td>
+						<td>Données produites</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>Référentiels hydrographique et hydrogéologique [SIE]</li>
+								<li>Déclarations d'usages ou de pressions et enquêtes (rejets, prélèvements, etc.) [SI Police, redevances, météo, agriculture, industrie, etc.]</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Délimitations et caractéristiques des masses d'eau [SIE]</li>
+								<li>Évaluation des pressions et des impacts [WISE]</li>
+								<li>Inventaire des émissions [WISE]</li>
+								<li>Analyse économique de l'utilisation de l'eau [WISE]</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<ul>
+				<li>Référentiels : <a href="http://www.sandre.eaufrance.fr">www.sandre.eaufrance.fr</a></li>
+				<li>Pressions : <a href="http://reseau.eaufrance.fr/sujet/pressions">reseau.eaufrance.fr/sujet/pressions</a></li>
+				<li>Économie : <a href="http://www.economie.eaufrance.fr">www.economie.eaufrance.fr</a></li>
+				<li>Observatoire des services : <a href="http://www.services.eaufrance.fr">www.services.eaufrance.fr</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Données DCE : art.6 (RZP)</h1>
+		<div class="content">
+			<table class="grid leftaligned shadowed">
+				<thead>
+					<tr>
+						<td>Données consommées</td>
+						<td>Données produites</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>Sites N2K [SINP]</li>
+								<li>Sites de baignade [SISE Eaux]</li>
+								<li>Zones sensibles DERU [SIE]</li>
+								<li>Zones vulnérables DN [SIE]</li>
+								<li>Zones conchylicoles [SIE]</li>
+								<li>Données art. 7 (AEP)</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Sites N2K dépendant de l'eau</li>
+								<li>Registre des zones protégées [SIE]</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<ul>
+				<li>Zonages : <a href="http://www.sandre.eaufrance.fr">www.sandre.eaufrance.fr</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Données DCE : art.7 (AEP)</h1>
+		<div class="content">
+			<table class="grid leftaligned shadowed">
+				<thead>
+					<tr>
+						<td>Données consommées</td>
+						<td>Données produites</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>Captages AEP [SISE Eaux]</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Captages AEP DCE (&gt;10 m³/jour ou 50 pers.)</li>
+								<li>Zones AEP futures [WISE]</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<ul>
+				<li>Captages : <a href="https://bdes.brgm.fr">bdes.brgm.fr</a> (site Adès producteurs, avec authentification)</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Données DCE : art.8 (surveillance)</h1>
+		<div class="content">
+			<table class="grid leftaligned shadowed">
+				<thead>
+					<tr>
+						<td>Données consommées</td>
+						<td>Données produites</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>Référentiels des stations de mesures, qualité, piézométrique, hydrométrique [SIE]</li>
+								<li>Référentiels paramétrique et taxinomique [SIE]</li>
+								<li>Captages AEP &gt; 100 m³/jour [SISE-Eaux]</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Sites de surveillance des eaux de surface et des eaux souterraines [WISE]</li>
+								<li>Programmes de surveillance (cycle et fréquence par site et par élément de qualité) [WISE]</li>
+								<li>Résultats des programmes de surveillance DCE [SIE]</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<ul>
+				<li>Référentiels de données : <a href="http://www.sandre.eaufrance.fr">www.sandre.eaufrance.fr</a></li>
+				<li>Référentiels de méthodes : <a href="http://www.aquaref.fr">www.aquaref.fr</a></li>
+				<li>Catalogue des méthodes : <a href="http://www.onema.fr/methodes-de-surveillance-de-la-qualite-de-l-eau">www.onema.fr/methodes-de-surveillance-de-la-qualite-de-l-eau</a></li>
+				<li>Laboratoires agréés : <a href="http://www.labeau.ecologie.gouv.fr/index.php">www.labeau.ecologie.gouv.fr/index.php</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Données DCE : art.11 (prog. de mesures)</h1>
+		<div class="content">
+			<table class="grid leftaligned shadowed">
+				<thead>
+					<tr>
+						<td>Données consommées</td>
+						<td>Données produites</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>Données art. 5, 9, 13</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Description des programmes de mesure [SIE]</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<ul>
+				<li><a href="http://www.gesteau.fr">www.gesteau.fr</a> et les 12 sites de bassin</li>
+				<li><a href="https://osmose.eaufrance.fr/osmose/">osmose.eaufrance.fr/osmose</a> (avec authentification)</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Données DCE : art.13 (plan de gestion)</h1>
+		<div class="content">
+			<table class="grid leftaligned shadowed">
+				<thead>
+					<tr>
+						<td>Données consommées</td>
+						<td>Données produites</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>Données art. 5, 6, 8, 9, 11</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Référentiel d'évaluation de l'état des eaux (typologie, valeurs seuils, paramètres, limites de classe, indicateurs de tendance, etc.) [WISE]</li>
+								<li>Classification initiale de l'état des masses d'eau [WISE]</li>
+								<li>Objectifs des masses d'eau / exemptions, justifications [WISE]</li>
+								<li>Progrès depuis la classification initiale</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<ul>
+				<li><a href="http://www.gesteau.fr">www.gesteau.fr</a> et les 12 sites de bassin</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Données DCE : art.15 (rapportage)</h1>
+		<div class="content">
+			<table class="grid leftaligned shadowed">
+				<thead>
+					<tr>
+						<td>Données consommées</td>
+						<td>Données produites</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>Données art. 3, 5, 8, 13</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Rapportage art. 3, 5, 8, 13 [SIE, WISE]</li>
+								<li>Rapportage état d'avancement de la mise en œuvre des programmes de mesures [SIE, WISE]</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<ul>
+				<li>Rapportage : <a href="http://www.rapportage.eaufrance.fr">www.rapportage.eaufrance.fr</a></li>
+				<li>Sites WISE : <a href="http://water.europa.eu">water.europa.eu</a>, <a href="http://cdr.eionet.europa.eu">cdr.eionet.europa.eu</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Le SIE, pour quels usages ?</h1>
+		<div class="content">
+			<ul>
+				<li>Les autorités de bassins et les décideurs
+					<ul>
+						<li>Élaborer des SDAGE et des programmes de mesures</li>
+						<li>Évaluer l'impact des actions menées</li>
+						<li>Rendre compte</li>
+					</ul>
+				</li>
+				<li>Les gestionnaires
+					<ul>
+						<li>Adapter les politiques de gestion au contexte territorial</li>
+					</ul>
+				</li>
+				<li>Le grand public
+					<ul>
+						<li>Disposer d'informations sur l'environnement</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex" data-section="La surveillance en France" data-ssection="Surveillance" data-subsection="Les modalités de la surveillance">
+		<h1>La surveillance</h1>
+		<div class="content">
+			<ul>
+				<li>Cadrage technique par les arrêtés ministériels du 25 janvier 2010 et 7 août 2015</li>
+				<li>Des méthodes mises à disposition par l'AFB</li>
+				<li>Des guides de mise en œuvre (prélèvements, mesures, analyses) élaborés par Aquaref, laboratoire de référence</li>
+				<li>Des programmes établis par arrêté du préfet coordonnateur de bassin et rapportés à la Commission européenne</li>
+				<li>Responsabilité de l'agence de l'eau (qualité) et de la DREAL de bassin (quantité) d'après le schéma national des données de planification</li>
+				<li>Mise en œuvre par des laboratoires agréés (biologie, chimie) par le ministère (instruction par l'AFB, audit par le COFRAC)</li>
+				<li>Résultats accessibles sur <a href="http://www.eaufrance.fr">Eaufrance</a></li>
+				<li>Jeux de données transmis à l'AEE par le SDeS</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Les finalités de la surveillance</h1>
+		<div class="content">
+			<ul>
+				<li>Finalité <strong>statistique</strong> (globale : bassin, France)</li>
+				<li>Finalité <strong>opérationnelle</strong> (masse d'eau)</li>
+				<li>Finalité <strong>d'élucidation</strong> (ponctuelle) : opérations de contrôle d'enquête en cas d'incertitude sur l'origine des pressions ou l'ampleur des impacts</li>
+				<li>Finalité <strong>de contrôle</strong> : opérations de contrôle additionnel sur les captages en eaux de surface utilisés pour l'AEP, contrôles sur les zones de protection d'espèces</li>
+				<li>Finalité <strong>d'étalonnage</strong> : détermination de conditions de référence sur des sites non perturbés (réseau de référence)</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Les volets et les acteurs</h1>
+		<div class="content">
+			<table class="shadowed headcolumn">
+				<thead>
+					<tr>
+						<td></td>
+						<td>Physico-chimie / Chimie<br/><img src="pc.png" style="max-height: 2em" /></td>
+						<td>Hydrobiologie<br/><img src="hb.png" style="max-height: 2em" /></td>
+						<td>Hydromorphologie<br/><img src="hm.png" style="max-height: 2em" /></td>
+						<td>Quantité<br/><img src="quanti.png" style="max-height: 2em" /></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Cours d'eau</td>
+						<td>Agences, offices</td>
+						<td>Agences, DREAL, AFB</td>
+						<td>Agences, AFB</td>
+						<td>SPC (DREAL, Météo-France...), SCHAPI</td>
+					</tr>
+					<tr>
+						<td>Plans d'eau</td>
+						<td>Agences, offices</td>
+						<td>Agences, DREAL, AFB</td>
+						<td>Agences, AFB</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Eaux côtières et de transition</td>
+						<td>Agences, Ifremer, DDT</td>
+						<td>Agences, Ifremer, DDT, Irstea</td>
+						<td>Agences, BRGM, DDT</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Eaux souterraines</td>
+						<td>Agences, offices</td>
+						<td></td>
+						<td></td>
+						<td>BRGM, DREAL</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Les éléments de qualité et paramètres de suivi</h1>
+		<div class="content">
+			<ul>
+				<li>Exemple des eaux de surface
+					<ul>
+						<li>Biologie : phytoplancton, diatomées, macrophytes, invertébrés, poissons</li>
+						<li>Physico-chimie : température, pH, salinité (chlorures), oxygénation (taux de saturation, oxygène dissous, carbone organique dissous, DBO5), nutriments (phosphore total, orthophosphates, ammonium, nitrites, nitrates)...</li>
+						<li>Hydromorphologie : régime, continuité écologique, conditions morphologiques</li>
+						<li>31 polluants spécifiques de l'état écologique : arsenic, chrome, cuivre, zinc, chlordécone (biote)...</li>
+						<li>Substances pertinentes à surveiller, définies en CEP</li>
+						<li>45 substances prioritaires de l'état chimique, dont 11 à suivre dans le biote</li>
+						<li>Quantité : volume, hauteur, débit</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex" data-subsection="Les réseaux">
+		<h1>Le contrôle de surveillance</h1>
+		<div class="content twocolumns">
+			<div>
+				<ul>
+					<li>Finalité statistique : programme sur un échantillon de sites (18% des 11.523 masses d'eau depuis 2007)
+						<ul>
+							<li>Compléter / vérifier, par la voie du contrôle, l'évaluation des pressions résultant de déclarations</li>
+							<li>Établir des tendances à moyen ou long terme</li>
+						</ul>
+					</li>
+					<li>Tous les éléments de qualité biologiques, physico-chimiques, chimiques et hydromorphologiques</li>
+				</ul>
+			</div>
+			<div>
+				<svg id="pie_rcs" width="100%" viewBox="0 0 450 400" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(150 200)" data-fstart="['invisible']" data-fanim="{'0':'fragment_cssanim'}">
+						<circle class="pie1" cx="0" cy="0" r="75" />
+						<circle class="pie2" cx="0" cy="0" r="75" />
+						<circle class="pie3" cx="0" cy="0" r="75" />
+						<circle class="pie4" cx="0" cy="0" r="75" />
+						<g transform="translate(0 175)">
+							<text x="0" y="-5" class="stroke_a hvcentertext">1673</text>
+							<text x="0" y="10" class="hvcentertext">Cours d'eau</text>
+						</g>
+						<g transform="translate(89 -154)">
+							<text x="0" y="-5" class="stroke_b">109</text>
+							<text x="0" y="10" class="">Eaux côtières</text>
+						</g>
+						<g transform="translate(133 -114)">
+							<text x="0" y="-5" class="stroke_c">62</text>
+							<text x="0" y="10" class="">Eaux de transition</text>
+						</g>
+						<g transform="translate(167 -53)">
+							<text x="0" y="-5" class="stroke_d">199</text>
+							<text x="0" y="10" class="">Plans d'eau</text>
+						</g>
+					</g>
+				</svg>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Les contrôles opérationnels</h1>
+		<div class="content twocolumns">
+			<div>
+				<ul>
+					<li>Finalité opérationnelle : opérations de contrôle sur les masses d'eau «&nbsp;à risque&nbsp;»
+						<ul>
+							<li>Concevoir les actions des programmes de mesure</li>
+							<li>Vérifier leur efficacité</li>
+						</ul>
+					</li>
+					<li>Paramètres indicateurs de pressions significatives</li>
+					<li>Jusqu'au retour au bon état confirmé</li>
+				</ul>
+			</div>
+			<div>
+				<svg id="pie_rco" width="100%" viewBox="0 0 450 400" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(150 200)" data-fstart="['invisible']" data-fanim="{'0':'fragment_cssanim'}">
+						<circle class="pie1" cx="0" cy="0" r="75" />
+						<circle class="pie2" cx="0" cy="0" r="75" />
+						<circle class="pie3" cx="0" cy="0" r="75" />
+						<circle class="pie4" cx="0" cy="0" r="75" />
+						<g transform="translate(0 175)">
+							<text x="0" y="-5" class="stroke_a hvcentertext">4265</text>
+							<text x="0" y="10" class="hvcentertext">Cours d'eau</text>
+						</g>
+						<g transform="translate(133 -113)">
+							<text x="0" y="-5" class="stroke_b">65</text>
+							<text x="0" y="10" class="">Eaux côtières</text>
+						</g>
+						<g transform="translate(165 -58)">
+							<text x="0" y="-5" class="stroke_c">71</text>
+							<text x="0" y="10" class="">Eaux de transition</text>
+						</g>
+						<g transform="translate(173 -26)">
+							<text x="0" y="-5" class="stroke_d">217</text>
+							<text x="0" y="10" class="">Plans d'eau</text>
+						</g>
+					</g>
+				</svg>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Les contrôles supplémentaires</h1>
+		<div class="content">
+			<ul>
+				<li>Les contrôles additionnels
+					<ul>
+						<li>Finalité de contrôle</li>
+						<li>Captage d'eau de surface fournissant plus de 100 m³/jour</li>
+						<li>Masses d'eau en risque de non atteinte du bon état sur un site Natura 2000</li>
+					</ul>
+				</li>
+				<li>Les contrôles d'enquête
+					<ul>
+						<li>Finalité d'élucidation</li>
+						<li>Pollution accidentelle</li>
+						<li>Risque de non atteinte non couvert par un contrôle opérationnel</li>
+						<li>Déterminer la raison d'un excédent</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex" data-subsection="Les données de surveillance">
+		<h1>La surveillance des eaux de surface</h1>
+		<div class="content">
+			<figure class="centered">
+				<svg width="100%" height="85vh">
+					<g id="analyses_esu" data-fstart="['invisible']" data-fanim="{'0':'fragment_cssanim'}">
+					</g>
+				</svg>
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>La surveillance des eaux de surface</h1>
+		<div class="content">
+			<figure class="centered">
+				<svg width="100%" height="85vh">
+					<g id="params_esu" data-fstart="['invisible']" data-fanim="{'0':'fragment_cssanim'}">
+					</g>
+				</svg>
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>La surveillance des eaux souterraines</h1>
+		<div class="content">
+			<figure class="centered">
+				<svg width="100%" height="85vh">
+					<g id="sites_eso" data-fstart="['invisible']" data-fanim="{'0':'fragment_cssanim'}">
+					</g>
+				</svg>
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>La surveillance chimique des eaux souterraines</h1>
+		<div class="content">
+			<figure class="centered">
+				<svg width="100%" height="85vh">
+					<g id="params_eso" data-fstart="['invisible']" data-fanim="{'0':'fragment_cssanim'}">
+					</g>
+				</svg>
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>La surveillance chimique des eaux souterraines</h1>
+		<div class="content">
+			<figure class="centered">
+				<svg id="pie_params_eso" width="100%" viewBox="0 0 900 600" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(450 300)" data-fstart="['invisible']" data-fanim="{'0':'fragment_cssanim'}">
+						<circle class="pie1" cx="0" cy="0" r="100" />
+						<circle class="pie2" cx="0" cy="0" r="100" />
+						<circle class="pie3" cx="0" cy="0" r="100" />
+						<circle class="pie4" cx="0" cy="0" r="100" />
+						<circle class="pie5" cx="0" cy="0" r="100" />
+						<circle class="pie6" cx="0" cy="0" r="100" />
+						<g transform="translate(81 237)">
+							<text x="0" y="-5" class="stroke_a hvcentertext">545</text>
+							<text x="0" y="10" class="hvcentertext">Phytosanitaires</text>
+						</g>
+						<g transform="translate(-227 105)">
+							<text x="0" y="-5" class="stroke_b" style="text-anchor: end; dominant-baseline: middle">98</text>
+							<text x="0" y="10" class="" style="text-anchor: end; dominant-baseline: middle">Paramètres</text>
+							<text x="0" y="25" class="" style="text-anchor: end; dominant-baseline: middle">physico-chimiques</text>
+						</g>
+						<g transform="translate(-250 11)">
+							<text x="0" y="-5" class="stroke_c" style="text-anchor: end; dominant-baseline: middle">73</text>
+							<text x="0" y="10" class="" style="text-anchor: end; dominant-baseline: middle">Paramètres</text>
+							<text x="0" y="25" class="" style="text-anchor: end; dominant-baseline: middle">micro-biologiques</text>
+						</g>
+						<g transform="translate(-243 -58)">
+							<text x="0" y="-5" class="stroke_d" style="text-anchor: end; dominant-baseline: middle">49</text>
+							<text x="0" y="10" class="" style="text-anchor: end; dominant-baseline: middle">Micropolluants minéraux</text>
+						</g>
+						<g transform="translate(25 -249)">
+							<text x="0" y="-5" class="stroke_e hvcentertext">581</text>
+							<text x="0" y="10" class="hvcentertext">Micropolluants organiques</text>
+						</g>
+						<g transform="translate(249 -18)">
+							<text x="0" y="-5" class="stroke_f hvcentertext">32</text>
+							<text x="0" y="10" class="hvcentertext">Autres</text>
+						</g>
+					</g>
+				</svg>
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>La surveillance quantitative des eaux souterraines</h1>
+		<div class="content">
+			<figure class="centered">
+				<svg width="100%" height="85vh">
+					<g id="quanti_eso" data-fstart="['invisible']" data-fanim="{'0':'fragment_cssanim'}">
+					</g>
+				</svg>
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Le coût de la surveillance</h1>
+		<div class="content twocolumns">
+			<div>
+				<svg id="pie_cout_total" width="100%" viewBox="0 0 450 400" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(150 200)" data-fstart="['invisible']" data-fanim="{'0':'fragment_cssanim'}">
+						<circle class="pie1" cx="0" cy="0" r="75" />
+						<circle class="pie2" cx="0" cy="0" r="75" />
+						<circle class="pie3" cx="0" cy="0" r="75" />
+						<circle class="pie4" cx="0" cy="0" r="75" />
+						<circle class="pie5" cx="0" cy="0" r="75" />
+						<g transform="translate(-51 162)">
+							<text x="0" y="-5" class="stroke_a hvcentertext">18073</text>
+							<text x="0" y="10" class="hvcentertext">Cours d'eau</text>
+						</g>
+						<g transform="translate(-44 -164)">
+							<text x="0" y="-25" class="stroke_b hvcentertext">6716</text>
+							<text x="0" y="-10" class="hvcentertext">Eaux</text>
+							<text x="0" y="5" class="hvcentertext">souterraines</text>
+						</g>
+						<g transform="translate(88 -145)">
+							<text x="0" y="-5" class="stroke_c">1090</text>
+							<text x="0" y="10" class="">Eaux de transition</text>
+						</g>
+						<g transform="translate(137 -101)">
+							<text x="0" y="-5" class="stroke_d">2659</text>
+							<text x="0" y="10" class="">Eaux côtières</text>
+						</g>
+						<g transform="translate(167 -30)">
+							<text x="0" y="-5" class="stroke_e">1730</text>
+							<text x="0" y="10" class="">Plans d'eau</text>
+						</g>
+					</g>
+				</svg>
+				<p style="text-align: center">Moyenne annuelle des coûts nationaux en k€ (sur la période 2007-2010), par catégorie d'eau</p>
+			</div>
+			<div>
+				<svg id="pie_cout_me" width="100%" viewBox="0 0 450 400" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(200 200)" data-fstart="['invisible']" data-fanim="{'0':'fragment_cssanim'}">
+						<circle class="pie1" cx="0" cy="0" r="75" />
+						<circle class="pie2" cx="0" cy="0" r="75" />
+						<circle class="pie3" cx="0" cy="0" r="75" />
+						<circle class="pie4" cx="0" cy="0" r="75" />
+						<circle class="pie5" cx="0" cy="0" r="75" />
+						<g transform="translate(153 20)">
+							<text x="0" y="-5" class="stroke_a">1,7</text>
+							<text x="0" y="10" class="">Cours d'eau</text>
+						</g>
+						<g transform="translate(84 148)">
+							<text x="0" y="-5" class="stroke_b hvcentertext">11,7</text>
+							<text x="0" y="10" class="hvcentertext">Eaux</text>
+							<text x="0" y="25" class="hvcentertext">souterraines</text>
+						</g>
+						<g transform="translate(-125 97)">
+							<text x="0" y="-5" class="stroke_c" style="text-anchor: end; dominant-baseline: middle">11,4</text>
+							<text x="0" y="10" class="" style="text-anchor: end; dominant-baseline: middle">Eaux de</text>
+							<text x="0" y="25" class="" style="text-anchor: end; dominant-baseline: middle">transition</text>
+						</g>
+						<g transform="translate(-18 -169)">
+							<text x="0" y="-5" class="stroke_d">16,2</text>
+							<text x="0" y="10" class="">Eaux côtières</text>
+						</g>
+						<g transform="translate(154 -46)">
+							<text x="0" y="-5" class="stroke_e">3,9</text>
+							<text x="0" y="10" class="">Plans d'eau</text>
+						</g>
+					</g>
+				</svg>
+				<p style="text-align: center">Moyenne annuelle des coûts nationaux en k€ (sur la période 2007-2010), par masse d'eau et par catégorie d'eau</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex" data-section="L'évaluation en France" data-ssection="Évaluation" data-subsection="Les modalités de l'évaluation">
+		<h1>Les finalités de l'évaluation</h1>
+		<div class="content">
+			<ul>
+				<li>Finalité <strong>comptable</strong>
+					<ul>
+						<li>Classifier l'état des masses d'eau en début de cycle</li>
+						<li>Rendre compte des progrès accomplis en cours ou en fin de cycle</li>
+						<li>Vérifier l'atteinte des objectifs : comparaison de l'état en fin de cycle avec les exemptions du SDAGE</li>
+					</ul>
+				</li>
+				<li>Finalité de <strong>diagnostic</strong>
+					<ul>
+						<li>Fonder les décisions des polices de l'environnement et des gestionnaires des milieux aquatiques sur un diagnostic de l'état des milieux</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Le cadrage de l'évaluation</h1>
+		<div class="content">
+			<ul>
+				<li>Cadrage technique par les arrêtés ministériels du 25 janvier 2010 et du 27 juillet 2018, ainsi qu'un guide REEE de 2018</li>
+				<li>Des méthodes mises à disposition par l'AFB</li>
+				<li>Un référentiel d'évaluation réglementaire (par cycle) rapporté à la Commission</li>
+				<li>Mise en œuvre par les secrétariats technique de bassin (AE, DREAL, AFB)</li>
+				<li>Résultats rapportés à la Commission européenne et accessibles sur <a href="http://www.eaufrance.fr">Eaufrance</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Taux de suivi des masses d'eau</h1>
+		<div class="content">
+			<figure class="centered">
+				<svg width="100%" height="65vh">
+					<g id="tx_suivi" data-fstart="['invisible']" data-fanim="{'0':'fragment_cssanim'}">
+					</g>
+				</svg>
+			</figure>
+			<p>Combiner données de surveillance, données de pression, modèles d'extrapolation... et dires d'expert</p>
+		</div>
+	</section>
+
+	<section class="slide" data-background="https://fhafb.github.io/template_pres/img/page_courante.svg" data-animation="convex">
+		<h1>Niveau de confiance de l'état des eaux de surface</h1>
+		<div class="content">
+			<div class="twocolumns">
+				<div>
+					<p style="text-align: center">État écologique</p>
+					<figure class="centered" style="height: 35vh">
+						<svg width="100%" height="35vh">
+							<g id="confiance_esu_eco" data-fstart="['invisible']" data-fanim="{'0':'fragment_cssanim'}">
+							</g>
+						</svg>
+					</figure>
+				</div>
+				<div>
+					<p style="text-align: center">État chimique</p>
+					<figure class="centered" style="height: 35vh">
+						<svg width="100%" height="35vh">
+							<g id="confiance_esu_chim" data-fstart="['invisible']" data-fanim="{'0':'fragment_cssanim'}">
+							</g>
+						</svg>
+					</figure>
+				</div>
+			</div>
+			<figure>
+				<svg width="100%" height="40" style="margin: auto">
+					<rect x="0" y="0" width="5%" height="20" class="fill_a" />
+					<text x="6%" y="10" style="dominant-baseline: middle">Inconnu</text>
+					<rect x="20%" y="0" width="5%" height="20" class="fill_b" />
+					<text x="26%" y="10" style="dominant-baseline: middle">Pas d'info</text>
+					<rect x="40%" y="0" width="5%" height="20" class="fill_c" />
+					<text x="46%" y="10" style="dominant-baseline: middle">Faible</text>
+					<rect x="60%" y="0" width="5%" height="20" class="fill_d" />
+					<text x="66%" y="10" style="dominant-baseline: middle">Moyen</text>
+					<rect x="80%" y="0" width="5%" height="20" class="fill_e" />
+					<text x="86%" y="10" style="dominant-baseline: middle">Élevé</text>
+				</svg>
+			</figure>
+			<ul>
+				<li>Un niveau de confiance (déterminé par logigramme) plutôt bas en 2009 sur des données de surveillance de 2006-2007, en amélioration</li>
+				<li>34% des masses d'eau de surface sont dans un état chimique inconnu en 2009, 21% en 2016</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-section="Le contenu du SIE" data-ssection="Contenu du SIE" data-subsection="Données" data-animation="convex">
+		<h1>Les données du système des données publiques de l'eau</h1>
+		<div class="content">
+			<ul>
+				<li>Données de référence (<strong>cohérence</strong>)</li>
+				<li>Données thématiques issues de SI métiers et <strong>partagées</strong> selon leur schéma de données</li>
+				<li>Données issues de SI externes</li>
+				<li>Données et informations issues du <strong>traitement</strong> des données précédentes</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-subsection="Données de référence" data-animation="convex">
+		<h1>Les données de référence</h1>
+		<div class="content">
+			<p>Les données de référence consistent en :</p>
+			<ul>
+				<li>un dictionnaire de données</li>
+				<li>une codification des objets (bassins versants, masses d'eau, sites, unités...) : identifiant unique national ou européen</li>
+				<li>un jeu de données associant à l'identifiant les caractéristiques stables et communes de l'entité (le « référentiel »)</li>
+				<li>un ou plusieurs scénarios d'échange pour permettre la communication des données entre producteurs et utilisateurs (format, protocole)</li>
+			</ul>
+			<p>Les données de référence (sauf exception fondée en droit) sont disponibles sous licence libre sur <a href="http://www.sandre.eaufrance.fr">www.sandre.eaufrance.fr</a>.</p>
+			<img src="img/logo_sandre.png" alt="" style="align-self: center;">
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Les dictionnaires de données</h1>
+		<div class="content">
+			<table style="border-spacing: 1.6vw 1.2vh; margin:auto; border-collapse: separate; border: none">
+				<tbody>
+					<tr style="background-color: transparent; border:none">
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic1.png" style="max-width: 100%; max-height: 100%" /></figure>
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic2.png" style="max-width: 100%; max-height: 100%" /></figure>
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic3.png" style="max-width: 100%; max-height: 100%" /></figure>
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic4.png" style="max-width: 100%; max-height: 100%" /></figure>
+					</tr>
+					<tr style="background-color: transparent; border:none">
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Générique</strong><br/>10 dictionnaires</td>
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Eaux de surface</strong><br/>7 dictionnaires</td>
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Assainissement</strong><br/>5 dictionnaires</td>
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Pluviométrie</strong><br/>4 dictionnaires</td>
+					</tr>
+					<tr style="height: 19.2vh; background-color: transparent; border:none">
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic5.png" style="max-width: 100%; max-height: 100%" /></figure>
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic6.png" style="max-width: 100%; max-height: 100%" /></figure>
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic7.png" style="max-width: 100%; max-height: 100%" /></figure>
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic8.jpg" style="max-width: 100%; max-height: 100%" /></figure> 
+					</tr>
+					<tr style="background-color: transparent; border:none">
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Industrie</strong><br/>2 dictionnaires</td>
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Eau potable</strong><br/>3 dictionnaires</td>
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Eaux côtières</strong><br/>4 dictionnaires</td>
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Eaux souterraines</strong><br/>5 dictionnaires</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Les référentiels de données</h1>
+		<div class="content">
+			<ul>
+				<li>Référentiels hydrographiques (BD Carthage, BD Topage) et hydrogéologique (BD Lisa)</li>
+				<li>Référentiels de gestion : bassins, sous-unités, masses d'eau de surface, masses d'eau souterraines...</li>
+				<li>Référentiels d'ouvrages : captages, rejets, obstacles...</li>
+				<li>Référentiels de surveillance : stations de mesure, paramètres, taxons, méthodes...</li>
+				<li>Référentiels d'évaluation : typologie des masses d'eau de surface, méthodes d'évaluation (règles, indicateurs, métriques)</li>
+				<li>Nomenclatures : types de pression, types d'action, d'exemption...</li>
+				<li>Glossaire</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-numfragment="2" data-animation="convex" data-onshow="activate_arrows" data-onhide="deactivate_arrows">
+		<h1>Un scénario d'échange</h1>
+		<div class="content">
+			<svg width="100%" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet" baseProfile="full" xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+					<marker id="arrow2" markerWidth="5" markerHeight="5" refX="2" refY="1.5" orient="auto" markerUnits="strokeWidth">
+						<path d="M0,0 L0,3 L4.5,1.5 z" fill="#08508A" />
+					</marker>
+				</defs>
+				<foreignObject x="0" y="180" width="120" height="40">
+					<body xmlns="http://www.w3.org/1999/xhtml" >
+						<div style="font: 0.6em sans-serif; border-width: 1px; border-style: solid">
+							<strong>Lieu :</strong> Termignon<br/>
+							<strong>Paramètre :</strong> Plomb <br/>
+							<strong>Date :</strong> 21/07/2017<br/>
+							...
+						</div>
+					</body>
+				</foreignObject>
+				<svg preserveAspectRatio="xMinYMid meet" viewBox="0 0 210 140" width="112" height="100%" x="136" y="0">
+					<image href="img/computer.png" width="210" height="140">
+				</svg>
+				<svg preserveAspectRatio="xMinYMid meet" viewBox="0 0 210 140" width="112" height="100%" x="552" y="0">
+					<image href="img/computer.png" width="210" height="140">
+				</svg>
+				<svg preserveAspectRatio="xMinYMid meet" viewBox="0 0 596 720" width="112" height="100%" x="680" y="0">
+					<image href="img/database.png" width="596" height="720">
+				</svg>
+				<svg preserveAspectRatio="xMinYMid meet" viewBox="0 0 596 720" width="112" height="100%" x="680" y="0">
+					<image href="img/database.png" width="596" height="720">
+				</svg>
+				<svg id="im001" data-fragment="{'0':['invisible']}" preserveAspectRatio="xMinYMid meet" viewBox="0 0 2000 2276" width="100" height="100%" x="350" y="-160">
+					<image href="img/xml.png" width="2000" height="2276">
+				</svg>
+				<svg id="im002" data-fragment="{'0-1':['invisible']}" preserveAspectRatio="xMinYMid meet" viewBox="0 0 2000 2276" width="100" height="100%" x="350" y="160">
+					<image href="img/xml.png" width="2000" height="2276">
+				</svg>
+				<path id="arrow001" data-fragment="{'0':['invisible']}" d="M 240 150 c 60 -60, 240 -60, 300 0" stroke="#08508A" stroke-width="5" fill="none" marker-end="url(#arrow2)" />
+				<path id="arrow002" data-fragment="{'0-1':['invisible']}" d="M 540 250 c -60 60, -240 60, -300 0" stroke="#08508A" stroke-width="5" fill="none" marker-end="url(#arrow2)" />
+			</svg>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Les données de référence</h1>
+		<div class="content">
+			<ul>
+				<li>Plus de 30.000 éléments (substances, taxons, méthodes, unités, niveaux de qualification...)</li>
+				<li>Plus de 3.000 pages de spécification, en licence ouverte</li>
+				<li>Près de 10.000 utilisateurs enregistrés, dont certains contrôlés et labellisés</li>
+			</ul>
+			<p style="display: flex; justify-content: space-between; align-items: center">
+				<img class="shadowed" src="img/book1.png" alt="" style="max-width:17%;">
+				<img class="shadowed" src="img/book2.png" alt="" style="max-width:17%;">
+				<img class="shadowed" src="img/book3.png" alt="" style="max-width:17%;">
+				<img class="shadowed" src="img/book4.png" alt="" style="max-width:17%;">
+				<img class="shadowed" src="img/book5.png" alt="" style="max-width:17%;">
+			</p>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex" data-subsection="Méthodes de référence">
+		<h1>La production des méthodes de référence</h1>
+		<div class="content" style="text-align: center">
+			<figure class="centered">
+				<img src="img/production_aquaref.svg" />
+			</figure>
+
+			<p>Garantir la <strong>qualité</strong> et la <strong>cohérence</strong> de la donnée !</p>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Les documents d'Aquaref</h1>
+		<div class="content">
+			<div>
+				<div style="float:left; width: 30%">
+					<ul>
+						<li>États de l'art</li>
+						<li>Évaluation des pratiques</li>
+						<li>Développement de méthodes</li>
+					</ul>
+					<div style="position:relative; height: 39vh">
+						<img src="img/aquaref3.png" class="shadowed" style="position:absolute; right:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;max-width: 60%" />
+						<img src="img/aquaref3.png" class="shadowed" style="position:absolute; right:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;transform-origin: bottom left; transform: rotate(-15deg); max-width: 60%; max-height: 100%" />
+						<img src="img/aquaref3.png" class="shadowed" style="position:absolute; right:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;transform-origin: bottom left; transform: rotate(-30deg); max-width: 60%; max-height: 100%" />
+						<img src="img/aquaref3.png" class="shadowed" style="position:absolute; right:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;transform-origin: bottom left; transform: rotate(-45deg); max-width: 60%; max-height: 100%" />
+					</div>
+				</div>
+				<div style="float:right; width: 30%">
+					<ul>
+						<li>Guides techniques</li>
+						<li>Ateliers</li>
+						<li>Normalisation</li>
+						<li>Formation</li>
+					</ul>
+					<div style="position:relative; height: 39vh">
+						<img src="img/aquaref1.png" class="shadowed" style="position:absolute; left:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;max-width: 60%; max-height: 100%" />
+						<img src="img/aquaref2.png" class="shadowed" style="position:absolute; left:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;transform-origin: bottom right; transform: rotate(15deg); max-width: 60%; max-height: 100%" />
+						<img src="img/aquaref1.png" class="shadowed" style="position:absolute; left:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;transform-origin: bottom right; transform: rotate(30deg); max-width: 60%; max-height: 100%" />
+						<img src="img/aquaref2.png" class="shadowed" style="position:absolute; left:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;transform-origin: bottom right; transform: rotate(45deg); max-width: 60%; max-height: 100%" />
+					</div>
+				</div>
+				<div style="width: 40%; float: left; position:relative; left:6vw; padding: 0 7.8vh 0 0; box-sizing: border-box;">
+					<svg width="100%" height="55vh" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet" baseprofile="full" xmlns="http://www.w3.org/2000/svg" version="1.1" style="margin: auto;">
+						<defs>
+							<marker id="arrow202" markerWidth="5" markerHeight="5" refX="3" refY="1.5" orient="auto" markerUnits="strokeWidth">
+								<path d="M0,0 L0,3 L4.5,1.5 z" fill="#08508A" />
+							</marker>
+							<marker id="arrow203" markerWidth="5" markerHeight="5" refX="2" refY="1.5" orient="auto" markerUnits="strokeWidth">
+								<path d="M5,0 L5,3 L0.5,1.5 z" fill="#08508A" />
+							</marker>
+						</defs>
+						<path d="M 100 100 L 100 20 A 80 80 0 0 1 169.28 150 Z" stroke="white" stroke-width="5" fill="#e9f1da" />
+						<path d="M 100 100 L 100 20 A 80 80 0 0 0 30.72 150 Z" stroke="white" stroke-width="5" fill="#e9f1da" />
+						<path d="M 100 100 L 30.72 150 A 80 80 0 0 0 169.28 150 Z" stroke="white" stroke-width="5" fill="#e9f1da" />
+						<text x="134.64" y="75" transform="rotate(60 134.64,75)" style="fill:#a1c51b; text-anchor:middle; font-size: 16px">Transfert</text>
+						<text x="65.36" y="75" transform="rotate(-60 65.36,75)" style="fill:#a1c51b; text-anchor:middle; font-size: 16px">Connaissance</text>
+						<text x="100" y="160" style="fill:#a1c51b; text-anchor:middle; font-size: 16px">Conseil</text>
+						<line x1="75" y1="75" x2="125" y2="75" stroke="#08508A" stroke-width="3" marker-start="url(#arrow203)" marker-end="url(#arrow202)" />
+						<line x1="70" y1="85" x2="95" y2="145" stroke="#08508A" stroke-width="3" marker-start="url(#arrow203)" marker-end="url(#arrow202)" />
+						<line x1="130" y1="85" x2="105" y2="145" stroke="#08508A" stroke-width="3" marker-start="url(#arrow203)" marker-end="url(#arrow202)" />
+					</svg>
+					<ul>
+						<li>Expertise, conseil</li>
+						<li>Hotline</li>
+					</ul>
+				</div>
+			</div>
+			<div style="text-align: center">Plus de 360 documents en accès libre sur <a href="http://www.aquaref.fr">www.aquaref.fr</a></div>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex" data-subsection="Services">
+		<h1>Les services offerts</h1>
+		<div class="content">
+			<ul>
+				<li>Partage des données de référence (pour la <strong>qualité</strong> et la <strong>cohérence</strong>), avec support technique
+					<ul>
+						<li>Méthodes : Aquaref, agrément...</li>
+						<li>Données : Sandre, certification</li>
+					</ul>
+				</li>
+				<li>Services d'information pour l'<strong>accès</strong> large à la donnée
+					<ul>
+						<li>Marque Eaufrance</li>
+						<li>Nom de domaine <span style="font-family: monospace">eaufrance.fr</span></li>
+						<li>Publications en ligne : cartes, data papers, indicateurs</li>
+						<li>Collections : rapports, synthèses, bulletins</li>
+					</ul>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Le portail <a href="http://www.eaufrance.fr">www.eaufrance.fr</a></h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/screen_eaufrance.png" /> 
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Les collections Eaufrance</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/collections.png" /> 
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Les services offerts</h1>
+		<div class="content">
+			<ul>
+				<li>Services en réseau ouverts
+					<ul>
+						<li>Services d'accès à la donnée de référence</li>
+						<li>Services de recherche, de visualisation, de téléchargement</li>
+						<li>Services de traitement : géo-algorithmes, calcul de bio-indicateurs...</li>
+					</ul>
+				</li>
+				<li>Services en réseau pour les SI métiers (<strong>partage</strong>)
+					<ul>
+						<li>Services de collecte, de catalogage, de publication</li>
+						<li>Identification et authentification communes</li>
+						<li>Services d'infrastructure : hébergement</li>
+					</ul>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex" data-subsection="Gouvernance"> 
+		<h1>La gouvernance</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/gouvernance_sie.svg" />
+			</figure>
+		</div>
+	</section>
+
+
+</body>
+<script src="https://fhafb.github.io/template_pres/template_js.js"></script>
+<script src="pres.js"></script>
+</html>

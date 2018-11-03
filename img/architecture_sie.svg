@@ -1,0 +1,154 @@
+<svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet" baseprofile="full" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<style>
+		.directione {
+			fill: #87c5f8;
+		}
+
+		.directiont {
+			dominant-baseline: middle;
+			text-anchor: middle;
+			fill: black;
+			font-size: 0.8em;
+		}
+
+		.ise {
+			fill: #e9f1da;
+		}
+
+		.ist {
+			dominant-baseline: middle;
+			text-anchor: middle;
+			fill: #a1c51b;
+			font-size: 0.8em;
+		}
+
+		.component {
+			stroke: #a1c51b;
+			fill: #ccea62;
+			stroke-dasharray: 4;
+		}
+
+		.componentt {
+			dominant-baseline: middle;
+			text-anchor: middle;
+			fill: black;
+			font-size: 0.8em;
+		}
+		
+		.separator {
+			stroke: #666666;
+			stroke-dasharray: 4;
+		}
+
+		.categoryt {
+			text-anchor: middle;
+			fill: #666666;
+			font-size: 1em;
+		}
+
+		.responsible {
+			stroke: black;
+			marker-end: url(#arrow1);
+		}
+
+		.flux {
+			stroke: #08508A;
+			stroke-width: 4px;
+			marker-start: url(#arrow3);
+			marker-end: url(#arrow2);
+		}
+	</style>
+	<marker id="arrow1" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+		<path d="M0,0 L0,6 L9,3 z" fill="black" />
+	</marker>
+	<marker id="arrow2" markerWidth="5" markerHeight="5" refX="3" refY="1.5" orient="auto" markerUnits="strokeWidth">
+		<path d="M0,0 L0,3 L4.5,1.5 z" fill="#08508A" />
+	</marker>
+	<marker id="arrow3" markerWidth="5" markerHeight="5" refX="2" refY="1.5" orient="auto" markerUnits="strokeWidth">
+		<path d="M5,0 L5,3 L0.5,1.5 z" fill="#08508A" />
+	</marker>
+	<rect x="490" y="0" width="200" height="355" rx="10" ry="10" class="ise" />
+	<ellipse cx="50" cy="20" rx="40" ry="15" class="directione" />
+	<text x="50" y="20" class="directiont">DGALN</text>
+	<path d="M 90 20 L 140 20" class="responsible" />
+	<rect x="140" y="5" width="300" height="30" class="ise" />
+	<text x="290" y="20" class="ist">Réglementation des usages de l'eau</text>
+	<path d="M 440 20 L 490 20" class="flux" />
+	<ellipse cx="50" cy="55" rx="40" ry="15" class="directione" />
+	<text x="50" y="55" class="directiont">DGALN</text>
+	<path d="M 90 55 L 140 55" class="responsible" />
+	<rect x="140" y="40" width="300" height="30" class="ise" />
+	<text x="290" y="55" class="ist">Police de l'eau et de la nature</text>
+	<path d="M 440 55 L 490 55" class="flux" />
+	<ellipse cx="50" cy="90" rx="40" ry="15" class="directione" />
+	<text x="50" y="90" class="directiont">DGALN</text>
+	<path d="M 90 90 L 140 90" class="responsible" />
+	<rect x="140" y="75" width="300" height="30" class="ise" />
+	<text x="290" y="90" class="ist">Planification</text>
+	<path d="M 440 90 L 490 90" class="flux" />
+	<ellipse cx="50" cy="125" rx="40" ry="15" class="directione" />
+	<text x="50" y="125" class="directiont">DGALN</text>
+	<path d="M 90 125 L 140 125" class="responsible" />
+	<rect x="140" y="110" width="300" height="30" class="ise" />
+	<text x="290" y="125" class="ist">Services publics d'eau et d'assainissement</text>
+	<path d="M 440 125 L 490 125" class="flux" />
+	<ellipse cx="50" cy="160" rx="40" ry="15" class="directione" />
+	<text x="50" y="160" class="directiont">DGALN</text>
+	<path d="M 90 160 L 140 160" class="responsible" />
+	<rect x="140" y="145" width="300" height="30" class="ise" />
+	<text x="290" y="160" class="ist">Redevances</text>
+	<path d="M 440 160 L 490 160" class="flux" />
+	<ellipse cx="50" cy="195" rx="40" ry="15" class="directione" />
+	<text x="50" y="195" class="directiont">DGPR</text>
+	<path d="M 90 195 L 140 195" class="responsible" />
+	<rect x="140" y="180" width="300" height="30" class="ise" />
+	<text x="290" y="195" class="ist">ICPE</text>
+	<path d="M 440 195 L 490 195" class="flux" />
+	<ellipse cx="50" cy="230" rx="40" ry="15" class="directione" />
+	<text x="50" y="230" class="directiont">DGALN</text>
+	<path d="M 90 230 L 140 230" class="responsible" />
+	<rect x="140" y="215" width="300" height="30" class="ise" />
+	<text x="290" y="230" class="ist">Protection et préservation du milieu marin</text>
+	<path d="M 440 230 L 490 230" class="flux" />
+	<ellipse cx="50" cy="265" rx="40" ry="15" class="directione" />
+	<text x="50" y="265" class="directiont">DGPR</text>
+	<path d="M 90 265 L 140 265" class="responsible" />
+	<rect x="140" y="250" width="300" height="30" class="ise" />
+	<text x="290" y="265" class="ist">Hydrométrie et prévision des crues</text>
+	<path d="M 440 265 L 490 265" class="flux" />
+	<ellipse cx="50" cy="300" rx="40" ry="15" class="directione" />
+	<text x="50" y="300" class="directiont">DGPR</text>
+	<path d="M 90 300 L 140 300" class="responsible" />
+	<rect x="140" y="285" width="300" height="30" class="ise" />
+	<text x="290" y="300" class="ist">Gestion du risque inondation</text>
+	<path d="M 440 300 L 490 300" class="flux" />
+	<ellipse cx="50" cy="335" rx="40" ry="15" class="directione" />
+	<text x="50" y="335" class="directiont">DGS</text>
+	<path d="M 90 335 L 140 335" class="responsible" />
+	<rect x="140" y="320" width="300" height="30" class="ise" />
+	<text x="290" y="335" class="ist">Santé</text>
+	<path d="M 440 335 L 490 335" class="flux" />
+	<rect x="500" y="10" width="180" height="50" rx="10" ry="10" class="component" />
+	<text x="590" y="20" class="componentt">Service d'information Eaufrance</text>
+	<text x="590" y="35" class="componentt">Services en réseau</text>
+	<text x="590" y="50" class="componentt">(authentification, traitements...)</text>
+	<rect x="500" y="315" width="180" height="30" rx="10" ry="10" class="component" />
+	<text x="590" y="330" class="componentt">Services d'infrastructure</text>
+	<rect x="500" y="240" width="180" height="65" rx="10" ry="10" class="component" />
+	<text x="590" y="250" class="componentt">Sémantique</text>
+	<text x="590" y="265" class="componentt">Données de référence</text>
+	<text x="590" y="280" class="componentt">Méthodes de référence</text>
+	<text x="590" y="295" class="componentt">URi</text>
+	<text x="590" y="150" fill="black" text-anchor="middle" dominant-baseline="middle" style="font-size: 1.5em; font-weight: bold">SIE</text>
+	<rect x="740" y="160" width="55" height="35" fill="#87c5f8" />
+	<text x="767" y="170" class="componentt">Autres</text>
+	<text x="767" y="185" class="componentt">SI</text>
+	<path d="M 115 0 L 115 400" class="separator" />
+	<path d="M 470 0 L 470 400" class="separator" />
+	<path d="M 715 0 L 715 400" class="separator" />
+	<text x="50" y="375" class="categoryt">Autorités</text>
+	<text x="50" y="390" class="categoryt">responsables</text>
+	<text x="290" y="390" class="categoryt">SI métier</text>
+	<text x="590" y="390" class="categoryt">SI fédérateur</text>
+	<path d="M 690 177 L 740 177" class="flux" />
+</svg>

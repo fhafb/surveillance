@@ -1,0 +1,60 @@
+<svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet" baseprofile="full" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<style>
+		.year {
+			font: 10px sans-serif;
+		}
+		.text {
+			font: bold 12px sans-serif;
+		}
+		.law {
+			font: italic 12px sans-serif;
+		}
+		.is {
+			font: bold 20px sans-serif;
+		}
+		@keyframes chrono_boxanim {
+			from {
+				transform: scale(0);
+			}
+			to {
+				transform: scale(1);
+			}
+		}
+	</style>
+	<path d="M 50 350 c 300 0, 600 -200, 700 -300" stroke="#9fc418" stroke-width="5" fill="none" marker-end="url(#arrow1)" />
+	<path d="M 95.3 353.5 L 94.7 343.5" stroke="#08508a" stroke-width="2" fill="none" />
+	<text x="94.3" y="338.6" class="year fill_b hcentertext" transform="rotate(-3.7 94.3,338.6)">1992</text>
+	<text x="95.6" y="368.5" class="text fill_b">Protocole national des données sur l'eau</text>
+	<text x="95.6" y="378.5" class="law fill_c">2e loi sur l'eau</text>
+	<g data-fstart="['invisible']" data-fanim="{'0':'fragment_cssanim'}" style="animation: chrono_boxanim 1s 1 forwards; transform-origin: 190px 230px">
+		<rect x="100" y="200" width="180" height="60" class="svgbox" />
+		<text x="190" y="230" class="is fill_b hvcentertext">RNDE</text>
+	</g>
+	<path data-fragment="{'0':['invisible']}" d="M 307.6 311.6 L 304.6 302.1" stroke="#08508a" stroke-width="2" fill="none" />
+	<text data-fragment="{'0':['invisible']}" x="303.1" y="297.3" class="year fill_b hcentertext" transform="rotate(-17.8 303.1,297.3)">2000</text>
+	<text data-fragment="{'0':['invisible']}" x="309.2" y="326.4" class="law fill_c">DCE</text>
+	<path data-fragment="{'0-1':['invisible']}" d="M 382.9 284.5 L 379.2 275.2" stroke="#08508a" stroke-width="2" fill="none" />
+	<text data-fragment="{'0-1':['invisible']}" x="377.3" y="270.5" class="year fill_b hcentertext" transform="rotate(-21.8 377.3,270.5)">2003</text>
+	<text data-fragment="{'0-1':['invisible']}" x="384.7" y="299.1" class="text fill_b">Protocole du SIE</text>
+	<g data-fragment="{'0-1':['invisible']}" data-fanim="{'2':'fragment_cssanim'}" style="animation: chrono_boxanim 1s 1 forwards; transform-origin: 190px 230px">
+		<rect x="360" y="130" width="130" height="50" class="svgbox" />
+		<text x="425" y="155" class="is fill_b hvcentertext">SIE</text>
+	</g>
+	<path data-fragment="{'0-2':['invisible']}" d="M 454.4 253.1 L 450.1 244.1" stroke="#08508a" stroke-width="2" fill="none" />
+	<text data-fragment="{'0-2':['invisible']}" x="447.9" y="239.6" class="year fill_b hcentertext" transform="rotate(-25.4 447.9,239.6)">2006</text>
+	<text data-fragment="{'0-2':['invisible']}" x="456.5" y="267.6" class="law fill_c">3e loi sur l'eau</text>
+	<path data-fragment="{'0-3':['invisible']}" d="M 542.4 207.1 L 537.4 198.4" stroke="#08508a" stroke-width="2" fill="none" />
+	<text data-fragment="{'0-3':['invisible']}" x="535.0" y="194.1" class="year fill_b hcentertext" transform="rotate(-29.7 535.0,194.1)">2010</text>
+	<text data-fragment="{'0-4':['invisible']}" x="544.9" y="221.4" class="text fill_b">SNDE 2010</text>
+	<g data-fragment="{'0-4':['invisible']}" data-fanim="{'5':'fragment_cssanim'}" style="animation: chrono_boxanim 1s 1 forwards; transform-origin: 425px 155px">
+		<rect x="450" y="10" width="200" height="100" class="svgbox" />
+		<text x="550" y="30" class="is fill_b hvcentertext">Système des</text>
+		<text x="550" y="50" class="is fill_b hvcentertext">données publiques</text>
+		<text x="550" y="70" class="is fill_b hvcentertext">de l'eau</text>
+		<rect x="520" y="80" width="60" height="24" rx="10" ry="10" stroke="#9fc418" stroke-dasharray="4" fill="#e9f1da" />
+		<text x="550" y="92" class="is fill_b hvcentertext">SIE</text>
+	</g>
+	<path data-fragment="{'0-4':['invisible']}" d="M 670.6 123.6 L 664.6 115.6" stroke="#08508a" stroke-width="2" fill="none" />
+	<text data-fragment="{'0-4':['invisible']}" x="661.6" y="111.6" class="year fill_b hcentertext" transform="rotate(-36.7 661.6,111.6)">2017</text>
+	<text data-fragment="{'0-4':['invisible']}" x="673.6" y="137.6" class="text fill_b">SNDE 2018</text>
+</svg>
