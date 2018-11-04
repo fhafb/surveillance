@@ -202,19 +202,19 @@ document.addEventListener("DOMContentLoaded",function(event) {
 			"Taux de suivi (en %)",yticks,
 			i => (colorGradient(i,['#08508A','#9FC418','#199FD9'])));
 	// Graphe de niveau de confiance de l'état écologique des ESU
-	draw_bargraph('confiance_esu_eco',[0,0,3,100],
-			[[0,2.21,0.16,64.37,23.13,10.14],[1,0.97,0.83,52.18,21.76,24.26],[2,0.36,0.34,46.63,21.62,31.05]],
+	draw_bargraph('confiance_esu_eco',[0,0,4,100],
+			[[0,2.21,0.16,64.37,23.13,10.14],[1,0.97,0.83,52.18,21.76,24.26],[2,0.36,0.34,46.63,21.62,31.05],[3,0.24,0.17,17.35,26.98,55.25]],
 			[6,9],
-			"",[{position:0,text:"2010"},{position:1,text:"2013"},{position:2,text:"2016"}],
+			"",[{position:0,text:"2010"},{position:1,text:"2013"},{position:2,text:"2016"},{position:3,text:"2016 - ME surv."}],
 			"",yticks,
-			[['#A1C51B','#08508A','#777','#E68A00','#199FD9'],['#A1C51B','#08508A','#777','#E68A00','#199FD9'],['#A1C51B','#08508A','#777','#E68A00','#199FD9']]);
+			[['#A1C51B','#08508A','#777','#E68A00','#199FD9'],['#A1C51B','#08508A','#777','#E68A00','#199FD9'],['#A1C51B','#08508A','#777','#E68A00','#199FD9'],['#A1C51B','#08508A','#777','#E68A00','#199FD9']]);
 	// Graphe de niveau de confiance de l'état chimique des ESU
-	draw_bargraph('confiance_esu_chim',[0,0,3,100],
-			[[0,34.12,0,42.68,16.47,6.73],[1,35.91,1.10,26,21.55,15.44],[2,21.19,3.39,34.34,28.07,13.01]],
+	draw_bargraph('confiance_esu_chim',[0,0,4,100],
+			[[0,34.12,0,42.68,16.47,6.73],[1,35.91,1.10,26,21.55,15.44],[2,21.19,3.39,34.34,28.07,13.01],[3,1.25,13.95,18.02,14.83,51.95]],
 			[6,9],
-			"",[{position:0,text:"2010"},{position:1,text:"2013"},{position:2,text:"2016"}],
+			"",[{position:0,text:"2010"},{position:1,text:"2013"},{position:2,text:"2016"},{position:3,text:"2016 - ME surv."}],
 			"",yticks,
-			[['#A1C51B','#08508A','#777','#E68A00','#199FD9'],['#A1C51B','#08508A','#777','#E68A00','#199FD9'],['#A1C51B','#08508A','#777','#E68A00','#199FD9']]);
+			[['#A1C51B','#08508A','#777','#E68A00','#199FD9'],['#A1C51B','#08508A','#777','#E68A00','#199FD9'],['#A1C51B','#08508A','#777','#E68A00','#199FD9'],['#A1C51B','#08508A','#777','#E68A00','#199FD9']]);
 });
 
 // Animation de la diapositive sur les échanges XML
