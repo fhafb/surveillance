@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr" data-duration="1h">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Présentation du système d'information sur l'eau">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Le système d'information sur l'eau</title>
+	<link rel="stylesheet" href="template_notes.css">
+</head>
+<body>
+	<h1>Le programme de surveillance et le système d'information sur l'eau</h1>
+
+	<h2 id="title">Présentation</h2>
+	<ul>
+		<li>Présentation : FH, questions-organisation, mail</li>
+		<li>Contexte : surveillance à la base du processus de planification et de gestion de l'eau</li>
+	</ul>
+
+	<h2 id="slide-1">Une prise de conscience récente</h2>
+	Après cette présentation du cadre conceptuel d'exploitation de la donnée, je vais rapidement vous présenter la réglementation liée à la collecte de la donnée et les grands jalons qui ont conduit à son élaboration. En comparaison avec d'autres domaines d'intervention publique, celui de la qualité des eaux est relativement récent. Si on essaie de retracer son origine, on en vient à la Révolution française, avec une première loi réglementant la distribution de l'eau promulguée en 1790, et qui attribue aux communes la responsabilité de la distribution de l'eau. Cette loi ne parle pas encore de qualité et voit surtout l'eau comme un bien de consommation courante, mais marque une première prise de conscience que l'eau est un bien public, au sens de la l'impossibilité d'exclure de son usage des personnes, de la non rivalité dans l'accès à ce bien, qui doit être géré par la communauté. Dès lors que cette responsabilité est établie, on arrive rapidement à la nécessité d'une gestion de ce bien pour assurer qu'il répond aux obligations de service public, et notamment de gestion sanitaire. Et ce n'est donc par surprenant que près d'un siècle plus tard, on voit réapparaître la gestion de l'eau dans la législation, dans une loi sur la protection de la santé publique. Cette loi a pour objectif de limiter la propagation des épidémies, notamment à travers des pouvoirs attribués aux préfets de limiter l'usage de l'eau. Chose nouvelle, elle introduit aussi la notion de taxe sanitaire, une taxe destinée à faire participer tous les usagers au financement des équipements de maintien sanitaire. Et elle prévoit des pénalités pour les dégradations causées, ce qui est un prélude à une police de l'environnement. Ces premières lois sont assez tournées vers l'eau en tant que bien de consommation, et ce n'est que plus tard aux tout débuts de la Vème république que l'eau est considérée dans la pluralité de ses usages, à la fois pour la consommation, l'agriculture, l'industrie, la préservation environnementale. Bien sûr ce basculement de la pensée fait suite aux premières problématiques liées à des conflits dans l'usage de l'eau. La première loi sur l'eau de 1964 rappelle ces multiples usages de l'eau et introduit une gestion décentralisée, basée sur un découpage naturel / hydrographique du territoire. Elle crée les agences financières de bassin (devenues aujourd'hui les agences de l'eau) qui ont pour rôle de percevoir les redevances des usagers et de les exploiter pour financer les équipements de gestion des eaux. Elle demande également de réaliser un inventaire physique, chimique, biologique des masses d'eau, et c'est la première introduction de la donnée sur l'eau dans la législation française. Elle précise par ailleurs les missions de police de l'eau. La 2ème loi sur l'eau complète le dispositif en proposant des outils de gestion concertée de l'eau, les SDAGE par bassin, les SAGE par unité hydrographique locale ; et elle définit des normes de qualité des eaux, ce qui suppose bien sûr de surveiller cette qualité des eaux. En parallèle, les réflexions évoluent au niveau européen et la directive-cadre sur l'eau établit en 2000 un cadre communautaire pour la politique de l'eau dans l'Union européenne. Cette directive, comme on va le voir tout à l'heure, s'appuie fortement sur la connaissance environnementale et la donnée. Elle structure l'activité de connaissance et l'utilisation des données pour l'élaboration de programmes de restauration ou de maintien de la qualité des eaux. Elle fixe aussi des objectifs de retour au bon état écologique pour 2015, donc comme vous le voyez, on est en plein dans l'actualité. La directive est transposée en droit français en 2004, puis en 2006 une troisième loi sur l'eau – la LEMA – conforte la politique française et les mandats des institutions pour la définition des programmes de mesures. Du côté de l'Onema, elle est aussi importante pour nous, puisque c'est la loi qui crée l'Onema comme établissement public pour l'appui technique à la mise en œuvre de la politique de l'eau en France.
+
+	<h2 id="slide-2">Les données de la planification</h2>
+	<ul>
+		<li>La planification, l'élaboration des SDAGE, des programmes de mesure et de leurs déclinaisons territoriales, suppose une bonne connaissance de l'état des eaux : caractériser le bon état, l'état actuel, le différentiel.</li>
+		<li>DCE impose démarche rigoureuse de construction de cette connaissance</li>
+		<li>Article 15 définit un retour des informations vers la CE, à fréquence régulière</li>
+		<li>Données : volumes considérables → traitement et exploitation nécessitent SI (organisation, infras, logiciels, bases de données avec cohérence interne et liens)</li>
+		<li>Données issues d'autres SI et alimentent d'autres SI</li>
+	</ul>
+
+	<h2 id="slide-3">Données DCE : art. 3</h2>
+	<ul>
+		<li>Articles 1 et 2 apportent glossaire et définissent grands objectifs.</li>
+		<li>Article 3 demande de définir des unités géographiques de gestion cohérentes avec l'hydrographie (bassins hydro, districts hydro), pour toutes catégories → incluses dans SANDRE</li>
+		<li>Autorités compétentes pour la mise en œuvre de la DCE → remontées dans WISE</li>
+	</ul>
+
+	<h2 id="slide-4">Données DCE : art.5 (usages)</h2>
+	<ul>
+		<li>Article 4 parle des objectifs environnementaux</li>
+		<li>Article 5 demande une caractérisation a minima des districts, dès l'entrée en vigueur de la directive. Evaluation assez figée qui n'a pas vocation à être globalement remise en cause mais peut être ajustée à chaque cycle de gestion.
+		<ul>
+			<li>masses d'eau : limites, catégories, écorégions</li>
+			<li>conditions de référence hydromorphos et PC : très bon état, potentiel écologique maximal, établies par modèle ou grâce à réseau de référence</li>
+			<li>pressions : pollutions ponctuelles et diffuses, captages importants, régulations de débit, altérations morphologiques, aménagements (urbain, industriel, agricole)</li>
+			<li>incidences, notamment anthropologiques</li>
+			<li>analyse économique : coûts des services, volumes, coûts des investissements</li>
+		</ul></li>
+	</ul>
+
+	<h2 id="slide-5">Données DCE : art.6 (RZP)</h2>
+	<ul>
+		<li>Article 6 définit registre des zones protégées qui nécessitent une protection spéciale selon une autre directive :
+			<ul>
+				<li>captages d'eau</li>
+				<li>protection : Natura 2000</li>
+				<li>eaux de plaisance et de baignade : directive 76/160/CEE</li>
+				<li>zones sensibles du point de vue des nutriments (directive nitrate, directive eaux résiduaires urbaines 91/271/CEE)</li>
+			</ul>
+		</li>
+	</ul>
+
+	<h2 id="slide-6">Données DCE : art.7 (AEP)</h2>
+	<ul>
+		<li>L'article 7 impose de recenser les masses d'eau utilisées pour le captage d'eau potable, aujourd'hui ou dans le futur, et qui fournissent plus de 10 m3/jour ou desservent plus de 50 habitants</li>
+		<li>Infos issues du SI du ministère de la santé SISE Eaux et diffusées sur le site ADES producteurs de façon restreinte</li>
+	</ul>
+
+	<h2 id="slide-7">Données DCE : art.8 (surveillance)</h2>
+	<ul>
+		<li>L'article 8 constitue les programmes de surveillance (cf plus tard), à l'origine d'une grande part des données du SIE, et qui fait l'objet d'une description dans le SIE :
+			<ul>
+				<li>lieux et types des stations de mesures : SANDRE</li>
+				<li>référentiel des paramètres de suivi : homogénéité des remontées d'information, SANDRE</li>
+			</ul>
+		</li>
+		<li>Remontés périodiquement lors du rapportage.</li>
+		<li>La surveillance s'appuie sur des protocoles normalisés et des méthodes, disponibles sur site Aquaref.</li>
+		<li>Les labos agréés par le ministère de l'écologie pour effectuer les analyses et les prélèvements sont recensés sur le site Lab'Eau.</li>
+	</ul>
+
+	<h2 id="slide-8">Données DCE : art.11 (prog. de mesures)</h2>
+	<ul>
+		<li>L'article 11 traite des programmes de mesures, qui doit pour chaque district hydro, proposer les actions à mener pour satisfaire les objectifs de la DCE.</li>
+		<li>Il s'appuie sur les caractéristiques des bassins (art 5), les données économiques et de récupération des coûts (art 9) et les plans de gestion (art 13).</li>
+		<li>Les programmes de mesures sont disponibles sur Gest'eau et les sites de bassins. Ils peuvent être administrés grâce à l'application Osmose en développement.</li>
+	</ul>
+
+	<h2 id="slide-9">Données DCE : art.13 (plans de gestion)</h2>
+	<ul>
+		<li>Les plans de gestion établissent à l'échelle du district les données techniques correspondant à l'état des masses d'eau, l'économie du bassin, les mesures prises pour atteindre les objectifs d'amélioration de la qualité.</li>
+		<li>Ces plans s'appuient sur l'ensemble des données décrites jusqu'à présent. Ils sont remontés via le système WISE à la CE et sont mis à disposition sur les sites des bassins et le site national Gest'eau.</li>
+	</ul>
+
+	<h2 id="slide-10">Données DCE : art.15 (rapportage)</h2>
+	<ul>
+		<li>Rapportage : remontée de toutes les infos vers la CE, selon une période de 6 ans :
+			<ul>
+				<li>complet (état, PdM, SDAGE, RZP) : 2010 puis 2016</li>
+				<li>bilan à mi-parcours : 2012 puis 2019</li>
+			</ul>
+		</li>
+		<li>Remontée par les bassins avec appui de l'Onema pour l'harmonisation et la vérification de la qualité</li>
+		<li>Outil : SI WISE, formats et protocoles définis par la CE</li>
+		<li>Données utilisées pour :
+			<ul>
+				<li>évaluer l'implémentation par les états membres de la DCE</li>
+				<li>informer le public de l'action en lien avec l'eau</li>
+			</ul>
+		</li>
+		<li>Données dispos sur WISE et sur site français</li>
+	</ul>
+
+	<h2 id="slide-11">Le SIE : pour quels usages ?</h2>
+	<ul>
+		<li>Toutes les mesures réglementaires de la DCE concourent à la production de la connaissance nécessaire à la construction des mesures pour restaurer ou maintenir le bon état écologique des masses d'eau. Elles précisent les flux de données et les modes d'exploitation.</li>
+		<li>Transcription par le SNDE de 2010, qui définit les contours du SIE.</li>
+		<li>3 catégories d'utilisateurs :
+			<ul>
+				<li>autorités de bassins</li>
+				<li>CE</li>
+				<li>grand public, répond aux exigences d'autres directives SI (accès aux données publiques 2003, convention d'Aarhus, Inspire 2007, circulaire Open-data de 2011)</li>
+			</ul>
+		</li>
+	</ul>
+
+	<h2 id="slide-12">La surveillance</h2>
+	<ul>
+		<li>Comment le SIE est-il alimenté par les données de terrain ?</li>
+		<li>Surveillance = processus de collecte et de qualification des données. Un des piliers de la politique de l'eau dont elle assure le fondement concret sur les observations du terrain.</li>
+		<li>Processus continu :
+			<ul>
+				<li>état des lieux initial</li>
+				<li>identification des ME susceptibles de ne pas atteindre le bon état</li>
+				<li>suivi et impacts des mesures</li>
+				<li>état des lieux final</li>
+			</ul>
+		</li>
+		<li>ET :
+			<ul>
+				<li>mieux comprendre phénomènes PC et bio sous-jacents, prévoir l'effet des mesures</li>
+				<li>définition de l'état de référence</li>
+			</ul>
+		</li>
+		<li>Définie par l'arrêté surveillance de 2010 et circulaire plus technique (guide de recommandations pour les PdS) de 2013</li>
+		<li>But : homogénéité et fiabilité pour comparaison puis priorisation</li>
+		<li>Normes et guides pratiques</li>
+		<li>PdS établis par bassin :
+			<ul>
+				<li>AE responsable de la qualité, pressions, coûts des services, travaux</li>
+				<li>DREAL responsables de l'hydrométrie</li>
+			</ul>
+		</li>
+		<li>Processus qualité :</li>
+			<ul>
+				<li>mesures externalisées</li>
+				<li>accréditation ISO 17025 : management du labo, personnel, métrologie, incertitudes de mesure, décernée par COFRAC après audit 4/5 ans</li>
+				<li>agrément délivré par MTES sur instruction AFB : exigences de performance (LQ), essais inter-labos tous les deux ans</li>
+			</ul>
+	</ul>
+
+	<h2 id="slide-13">Les finalités de la surveillance</h2>
+	<ul>
+		<li>Statistique : indicateurs consolidés d'appréciation de l'état des eaux ou de l'efficacité des politiques à grande échelle</li>
+		<li>Opérationnelle : définition des plans d'actions à l'échelle de la ME, suivi dans le temps</li>
+		<li>Elucidation : dégradation observée sans que la pression ne soit bien connue</li>
+		<li>Contrôle : sites particuliers, répertoriés pour protection d'espèces, ME utilisées pour eau potable</li>
+		<li>Etalonnage : déterminer seuils d'état → séries longues et diversifiées de données, avec écosystèmes en bon fonctionnement. Etat déterminé par comparaison des populations à l'état de référence pour une typologie donnée (climat, hydrologie, HER).</li>
+	</ul>
+
+	<h2 id="slide-14">Les volets et les acteurs</h2>
+	Au-delà des responsables, plusieurs acteurs interviennent en MOA ou MOE.
+	Dépend des catégories de ME et des compartiments.
+
+	<h2 id="slide-16">Le contrôle de surveillance</h2>
+	<ul>
+		<li>Evaluation s'applique à toutes les ME, mais surveillance effectuée uniquement sur échantillon de sites choisis pour représentativité.</li>
+		<li>Plusieurs réseaux de suivi, avec finalité différente et mode de gestion approprié.</li>
+		<li>RCS : contrôle systématique de tous les éléments de qualité sur toutes les stations. Fréquence selon variabilité naturelle, au moins 1/cycle.
+			<ul><li>18 % des MESU suivis, 2000 sites ESU, 2000 sites ESO</li></ul></li>
+		<li>Fournit évaluation systématique de l'état des eaux, classe les ME selon les normes en vigueur, vue d'ensemble pour la priorisation des actions.</li>
+		<li>Les données statistiques à l'échelle nationale sont issues de ce réseau.</li>
+	</ul>
+	
+	<h2 id="slide-17">Les contrôles opérationnels</h2>
+	<ul>
+		<li>Second = CO.</li>
+		<li>But : gestion locale des ME :
+			<ul>
+				<li>risque de non atteinte du bon état</li>
+				<li>évaluer les changements d'états dus aux programmes de mesures, efficacité</li>
+			</ul>
+		</li>
+		<li>Non pérenne :
+			<ul>
+				<li>mis en place quand une ME est identifiée en risque</li>
+				<li>arrêté lorsque le retour au bon état est confirmé</li>
+			</ul>
+		</li>
+		<li>Adapté au besoin :</li>
+		<li>Suivi uniquement des éléments de qualité qui réagissent aux pressions identifiées. Si rejet, toutes substances prioritaires rejetées.</li>
+		<li>fréquence pour disposer d'infos utiles, niveau de confiance et de précision suffisant</li>
+		<li>4600 stations ESU, 1500 stations ESO</li>
+	</ul>
+
+	<h2 id="slide-18">Les contrôles supplémentaires</h2>
+	<ul>
+		<li>2 modes supplémentaires qui ne sont pas supportés par des réseaux :
+			<ul>
+				<li>contrôles additionnels : zones protégées (captage AEP, habitat et protection d'espèces)</li>
+				<li>enquête : but d'élucidation pour déterminer l'origine d'une pollution ou d'un mauvais état lorsque pas de CO, déterminer rapidement les mesures à mettre en œuvre en cas de pollution accidentelle – gestion de crise</li>
+			</ul>
+		</li>
+	</ul>
+
+	<h2 id="slide-19">La surveillance des eaux de surface</h2>
+	<ul>
+		<li>Volume de la surveillance ne cesse de croître :
+			<ul>
+				<li>moyens technos évoluent : possible de réaliser plus d'analyses dans le même temps</li>
+				<li>réglementation évolue : plus contraignante et impose suivi de plus de paramètres. La DCE est un tournant qui a formalisé le processus de surveillance.</li>
+			</ul>
+		</li>
+	</ul>
+
+</body>
+<script src="template_notes.js"></script>
+</html>
